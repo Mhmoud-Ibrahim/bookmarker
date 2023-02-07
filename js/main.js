@@ -36,8 +36,8 @@ function displayMarks(){ //display function
     marks+=`
     <div class="webwell row mt-4 ">
     <h2 class="d-inline">${bookmarksContainer[i].siteName}</h2>
-    <a class="btn btn-primary m-1 shadow"  href="${bookmarksContainer[i].siteUrl}">visit</a>
-    <button id="deleteBtn" class="btn btn-danger  m-1 shadow" onclick="deletebBookMark(${i})" >delete</button>
+    <a class="btn btn-primary m-1 "  href="${bookmarksContainer[i].siteUrl}">visit</a>
+    <button id="deleteBtn" class="btn btn-danger  m-1 " onclick="deletebBookMark(${i})" >delete</button>
     </div>
     `
   }
