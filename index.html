@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start header -->
+    <header> 
+        <div class=" container bg-white py-4 w-75 m-auto ">
+            <h3 class="m-3 fw-bold">Bookmarker</h3>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start inputs -->
+    <section class="userinput" >
+ <div class="container p-3 py-4 w-75 m-auto text-center mt-3 ">
+        <h2>Bookmark your favorite sites </h2>
+            <label class="text-main mt-3 fw-bold " for="siteName">Site Name</label>
+            <input id="siteName" class="form-control mt-2 py-0 w-75 w-75 m-auto"  type="text" placeholder="Bookmark Name">
+            <div id="alert" class="alert d-none  alert-danger fw-bold w-100 w-75 " role="alert">Name is required</div>
+            <br><br>
+            <label class="text-black mt-3 fw-bold" for="siteUrl">Site URL</label>
+            <input id="siteUrl" class="form-control mt-2 py-0 w-75 m-auto"  type="text"  placeholder="site URL">
+            <button id="submitBtn" class="btn btn-primary mt-2">submit</button>
+    </div>
+    </section>
+    <!-- end inputs -->
+    <!-- start table -->
+    <div class="container2 py-2  w-75 m-auto ">
+        <div id="bookmarklist" class="bookmarklist  column">
+            <div class="webwell row      mt-4 ">
+            <h2 class="d-inline">hello</h2>
+            <a class="btn btn-primary m-1 shadow"  href="">visit</a>
+            <button class="btn btn-danger  m-1 shadow" >delete</button>
+            </div>
+        </div>
+    </div>
+    <!-- end table -->
+    <!-- start footer -->
+<footer class="w-100 ">
+    <div class=" container  bg-white py-4 w-75 m-auto ">
+        <p class="lead ">© 2019 Bookmarker Inc.</p>
+    </div>
+</footer>
+<!-- end footer -->
+    <script src="js/bootstrap.bundle.js" ></script>
+    <script src="js/main.js" ></script>
+</body>
+</html>
