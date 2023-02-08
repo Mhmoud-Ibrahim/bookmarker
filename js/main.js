@@ -1,10 +1,12 @@
-
+// variables
 var siteNameInput = document.getElementById('siteName');
 var siteUrlINput = document.getElementById('siteUrl');
 var submitBtn = document.getElementById('submitBtn');
 var deleteBtn = document.getElementById('deleteBtn');
 var searchInput = document.getElementById('search');
-var bookmarksContainer = [];
+
+var bookmarksContainer = [];//container 
+
 if(localStorage.getItem('bookmark') != null){ // check localstorage
   bookmarksContainer=JSON.parse(localStorage.getItem('bookmark')) 
   displayMarks(bookmarksContainer)
@@ -19,7 +21,7 @@ function validateUrl(){
  return regex.test(siteUrlINput.value);
 }
 
- function addBookMark(){ //add function
+ function addBookMark(){ //add function and validation
   if((validateName() && validateUrl()) == true){
     var  mark= {
       siteName:siteNameInput.value,
@@ -64,23 +66,4 @@ function deletebBookMark(index){ //delet function
   localStorage.setItem('bookmark',JSON.stringify(bookmarksContainer))
     displayMarks()
 }
-// function search(term){
-//   var searched=``;
-//   for(var i=0;i<bookmarksContainer.length;i++){
-//     if(bookmarksContainer[i].siteName.toLawerCase().includes(term.toLawerCase())){
-//       searched += `
-//       <div class="webwell row mt-4 ">
-//       <h2 class="d-inline">${bookmarksContainer[i].siteName.replace(term,'<span>' + term+ '</span> '   )}</h2>
-//       <a class="btn btn-primary m-1 "  href="${bookmarksContainer[i].siteUrl}">visit</a>
-//       <button id="deleteBtn" class="btn btn-danger  m-1 " onclick="deletebBookMark(${i})" >delete</button>
-//       </div>
-//       `
-//     }
-//   }
-//   document.getElementById('bookmarklist').innerHTML= searched;
-//   ;
-// }
 
-// searchInput.addEventListener("oninput", function(){
-//   search(term);
-// })
