@@ -23,12 +23,15 @@
         <h2>Bookmark your favorite sites </h2>
             <label class="text-main mt-3 fw-bold " for="siteName">Site Name</label>
             <input id="siteName" class="form-control mt-2 py-0 w-75 w-75 m-auto"  type="text" placeholder="Bookmark Name">
-            <div id="alert" class="alert d-none  alert-danger fw-bold w-100 w-75 " role="alert">Name is Invaild</div>
+            <div id="alert" class="alert d-none  alert-danger fw-bold  w-75 py-1 " role="alert">Name is Required</div>
             <br><br>
             <label class="text-black mt-3 fw-bold" for="siteUrl">Site URL</label>
             <input id="siteUrl" class="form-control mt-2 py-0 w-75 m-auto"  type="text"  placeholder="site URL">
+            <div id="alert2" class="alert d-none  alert-danger fw-bold  w-75 py-1" role="alert">Url is Required </div>
+            <br><br>
             <button id="submitBtn" class="btn btn-primary mt-2 ">submit</button>
     </div>
+    <input type="text" id="search" placeholder="search by name"  class="form-control mt-3  w-50 m-auto" oninput="search(this.value)">
     </section>
     <!-- end inputs -->
     <!-- start table -->

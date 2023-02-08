@@ -68,13 +68,15 @@ footer p {
     color: white;
     border: 1px solid #910004 !important;}
 
-    .alert{
-        position: absolute !;
-        z-index: 50;
-    }
+   
     .btn:hover{
         box-shadow:5px 5px 5px gray;
     }
     .webwell btn{
         box-shadow:5px 5px 5px gray;
+    }
+    #bookmarklist .webwell span{
+        color: yellow !important;
+        font-size: 50px;
+        font-weight: bold;
     }
